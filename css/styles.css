@@ -49,15 +49,18 @@ a {
 .adress-mail:hover,
 .adress-mail:focus {
   color: var(--dedicated-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-mail:hover .header-contact-svg,
 .adress-mail:focus .header-contact-svg {
   fill: var(--dedicated-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   background: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio {
   color: var(--dedicated-text-color);
@@ -109,6 +112,7 @@ header {
 .site-nav:hover,
 .site-nav:focus {
   color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav {
   display: flex;
@@ -120,10 +124,12 @@ header {
 .header-contact-tel:hover,
 .header-contact-tel:focus {
   color: var(--dedicated-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-tel:hover .header-contact-tel-svg,
 .header-contact-tel:focus .header-contact-tel-svg {
   fill: var(--dedicated-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact {
   margin-left: auto;
@@ -220,6 +226,7 @@ header {
 .button span:hover,
 .button span:focus {
   color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* МОДАЛКА */
 .backdrop {
@@ -230,6 +237,7 @@ header {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -241,6 +249,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   width: 528px;
   height: 581px;
   background-color: #ffffff;
@@ -429,14 +438,17 @@ header {
 
 .team-list-link-li:focus {
   background-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-link-item:hover,
 .team-list-link-item:focus {
   background-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-link-item:hover .team-list-link-svg,
 .team-list-link-item:focus .team-list-link-svg {
   fill: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-link-svg {
   width: 20px;
@@ -476,10 +488,12 @@ header {
 .clients-link:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .clients-svg,
 .clients-link:focus .clients-svg {
   fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Подвал */
 .footer {
@@ -559,6 +573,7 @@ header {
 .recconect-list-link:hover,
 .recconect-list-link:focus {
   background-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* страница ПОРТФОЛИО */
 /* Шапка Header */
@@ -607,10 +622,12 @@ header {
 .work-button:focus {
   background-color: var(--dedicated-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-button:hover .work-button-text,
 .work-button:focus .work-button-text {
   color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-button-text {
@@ -636,6 +653,7 @@ header {
 .work-list-link:hover,
 .work-list-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-list-item:nth-child(3n) {
   margin-right: 0;
@@ -643,14 +661,14 @@ header {
 .text-container {
   margin: 20px 24px;
 }
-.test {
+.work-thumb {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
 }
 
-.test-2 {
+.work-thumb-title {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -666,6 +684,7 @@ header {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.work-list-link:hover .test-2 {
+.work-list-link:hover .work-thumb-title,
+.work-list-link:focus .work-thumb-title {
   transform: translateY(0%);
 }
